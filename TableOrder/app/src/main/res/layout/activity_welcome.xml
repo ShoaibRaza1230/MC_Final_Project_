@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waiter3"
+    tools:context=".Welcome">
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:layout_width="271dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="adminSide"
+        android:text="Admin"
+        app:layout_constraintBottom_toTopOf="@+id/customerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/design_default_color_secondary" />
+
+    <Button
+        android:id="@+id/customerbtn"
+        android:layout_width="271dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="customerSide"
+        android:text="Customer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeNote"
+        android:layout_width="394dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="24dp"
+        android:text="Welcome To Royal West Hotels  "
+        android:textColor="#3F51B5"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
